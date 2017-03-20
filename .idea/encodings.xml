@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/RomanoF/footer.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/RomanoF/functions.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/RomanoF/header.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/RomanoF/page.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/RomanoF/searchform.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/RomanoF/style.css" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
