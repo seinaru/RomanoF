@@ -10,8 +10,11 @@
 <body <?php body_class(); ?>>
 <div class="wrapper">
     <header>
-        <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Whitesquare logo"></a>
-        <?php get_search_form(); ?>
+        <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.jpg" alt="Whitesquare logo"></a>
+        <div style="float: right; margin: 0px;">
+            <p style="margin: 0px 4px 5px 0px">&#9993; shop@RomanoF.com.ua | <span style="font-size: 14px; font-weight: 800">&#9990;</span>  (000) 444 777 4  </p>
+            <?php get_search_form(); ?>
+        </div>
         <nav class="main-navigation">
             <?php wp_nav_menu(array('menu' => 'top-menu', 'menu_class' => 'top-menu')); ?>
         </nav>

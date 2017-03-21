@@ -1,7 +1,7 @@
 body {
-    color: #8f8f8f;
-    font: 12px Tahoma, sans-serif;
-    background: #f8f8f8 url(images/bg.png);
+    color: black;
+    font: 14px Arial, sans-serif;
+    /*background: #f8f8f8 url(images/bg.png);*/
     border-top: 5px solid #7e7e7e;
     margin: 0;
 }
@@ -39,7 +39,7 @@ p {
 
 .button {
     color: #fff;
-    background-color: #29c5e6;
+    background-color: #000000;
     border: none;
     height: 32px;
     font-family: 'Oswald', sans-serif;
@@ -73,7 +73,7 @@ header {
     display: inline-block;
     color: #7e7e7e;
     font: 40px/40px 'Oswald', sans-serif;
-    background: url(images/bg.png);
+
     margin: 0;
     padding: 0 10px;
     text-transform: uppercase;
@@ -91,19 +91,22 @@ aside + section {
 
 footer {
     clear: both;
-    background: #7e7e7e;
+    background: #000000;
     color: #dbdbdb;
     font-size: 11px;
 }
 .search-form {
     float: right;
 }
-
+.search-form input {
+    width: 250px;
+}
 /**** navigation bar config ****/
 
 .main-navigation {
     background: #f3f3f3;
     border: 1px solid #e7e7e7;
+    margin-top: 3px;
 }
 
 .top-menu {
@@ -121,11 +124,12 @@ footer {
 }
 
 .top-menu li.current_page_item {
-    background: #29c5e6;
+    background: #000000;
+    color: white;
 }
 
 .top-menu a {
-    color: #b2b2b2;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -261,137 +265,114 @@ footer p {
 
 /***** main page  *****/
 
-.slider {
-    margin-top: 30px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.slider .content {
-    height: 220px;
-    padding: 30px 40px;
-    background: #e2e2e2;
-}
-
-.slider .title {
-    color: #5a5a5a;
-    font-size: 42px;
-}
-
-.slider .subtitle {
-    color: #acacac;
-    font-size: 20px;
-}
-
-.slider .links {
+.heading {
     display: block;
-    margin: 0;
-    padding: 10px;
-    background: #f3f3f3;
-    border-bottom: 1px solid #e7e7e7;
-    counter-reset: list 0;
-    color: #8f8f8f;
+    text-align: justify;
+    text-indent: 10px;
 }
 
-.slider .links li {
-    display: inline-block;
-    font-size: 18px;
-    line-height: 23px;
-    margin-right: 55px;
-    cursor: pointer;
+.heading p {
+    line-height: 1.5;
+    margin: 0px;
 }
 
-.slider .links li.active {
-    color: #29c5e6;
+.steps-block {
+    display: block;
+    width: 100%;
+    /*background-image: url("http://wordpresstest.dev/wp-content/uploads/2017/03/4.jpg");*/
+    background-color: rgba(180, 174, 174, 0.29);
 }
 
-.slider .links li:before {
-    display: inline-block;
-    counter-increment: list;
-    content: counter(list) " ";
-    background: #8f8f8f;
-    color: #fff;
-    width: 23px;
+.steps-block h1,h2 {
     text-align: center;
-    margin-right: 10px;
-    font-size: 16px;
-    cursor: pointer;
 }
-
-.slider .links li.active:before {
-    background: #29c5e6;
+.steps-block h1 {
+    padding-top: 2px;
 }
-
-.teaser {
+.steps,.ourProjectsExemple {
+    width: 30%;
+    /*height: 120px;*/
     display: inline-block;
-    padding: 0 10px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    margin: 0px;
+    padding: 5px;
     vertical-align: top;
+    text-align: justify;
+}
+.steps-icons {
+
+    text-align: center;
 }
 
-.teaser .heading {
-    background: transparent url(images/h1-bg.png);
-    margin: 40px 0 20px;
-    height: 16px;
-}
 
-.teaser .bullet {
+.orderForm {
+    text-align: center;
+    padding-top: 10px;
+}
+.orderForm h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+.orderForm p {
+    margin: 0px;
+}
+.orderPosDisplay {
     display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: #29c5e6;
-    vertical-align: top;
+    padding: 1% 5%;
+}
+.orderPosDisplay input {
+    height: 25px;
+    border-radius: 10px;
 }
 
-.teaser .heading-text {
-    display: inline-block;
-    text-transform: uppercase;
-    font: normal 14px/16px 'Oswald', sans-serif;
-    margin: 0;
-    padding: 0 10px;
-    background: url(images/bg.png);
-}
-
-.teaser .image {
-    float: left;
-    margin-right: 20px;
-}
-
-.teaser .small-block {
-    margin-bottom: 10px;
-}
-
-.teaser .small-block .image {
-    margin-right: 10px;
-}
-
-.teaser .more,
-.teaser .more a {
-    color: #525252;
-    margin-bottom: 0;
-}
-
-.teaser-small-heading {
+.ourProjects,.orderForm {
     display: block;
-    color: #525252;
-    margin: 0;
-    font-weight: normal;
-    font-size: 11px;
-    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
 }
-
-.teaser-small-paragraph {
-    margin: 4px 0;
-    font-size: 11px;
+.ourProjectsExemple img {
+    max-width:100%;
+    height:auto;
 }
-
-.clients img {
-    display: inline-block;
-    margin-right: 30px;
+.orderForm input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    width: 240px;
+    height: 60px;
+    font-family: Tahoma;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow: 0px 7px 5px rgba(0,0,0,0.6);
+    background: rgb(222, 177, 104);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #E8B21B 1%, #FFDE80 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #E8B21B), color-stop(100%, #FFDE80));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #E8B21B 1%, #FFDE80 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #E8B21B 1%, #FFDE80 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #E8B21B 1%, #FFDE80 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgb(232, 178, 27), #FFDE80 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
 }
-
+.orderForm input[type=submit]:hover {
+    background: -moz-linear-gradient(top, #DEB168 1%, #FFDE80 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #DEB168), color-stop(100%, #FFDE80));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #DEB168 1%, #FFDE80 50%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #DEB168 1%, #FFDE80 50%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #DEB168 1%, #FFDE80 50%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #DEB168, #FFDE80 50%);
+    /* W3C */
+}
 /****  side bar  ****/
 
 .aside-navigation {
