@@ -3,8 +3,14 @@
     <div class="footer-content">
         <div class="twitter">
             <h3 class="footer-heading"><?php echo __('Контакты', ''); ?></h3>
-            <p><span style="font-size: 14px; font-weight: 800">&#9990;</span> (000) 444 777 4</p>
-            <p><span style="font-size: 14px; font-weight: 800">&#9993;</span> shop@RomanoF.com.ua</p>
+            <?php
+            $phoneNumbers = array ('(096) 915 38 08  <span style="font-size: 14px; font-weight: 800; margin-left: 15px;">&#9993;</span> shop@RomanoF.com.ua', '(093) 589 55 62', '(066) 182 04 85');
+            foreach ($phoneNumbers as $value) {
+                echo '<p><span style="font-size: 14px; font-weight: 800">&#9990;</span> '.$value.'</p>';
+            }
+
+            ?>
+
         </div>
         <div class="sitemap">
             <h3 class="footer-heading"><?php echo __('Карта сайта', ''); ?></h3>

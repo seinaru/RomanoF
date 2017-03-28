@@ -18,3 +18,22 @@ if (function_exists('add_theme_support')) {
     add_theme_support('menus');
 }
 remove_filter('the_content', 'wpautop');
+
+
+register_nav_menus( array(
+    'top_menu' => 'Меню сверху',
+    'footer_menu' => 'Меню в подвале'
+) );
+
+function get_my_product()
+{
+    global $wpdb;
+    $fivesdrafts = $wpdb->get_results("SELECT * FROM $wpdb->categories");
+    $fivesdrafts = json_decode(json_encode($fivesdrafts),true);
+    return $fivesdrafts;
+}
+function goodlook ($array){
+    echo "<pre>";
+    print_r($array);
+    echo "</pre>";
+}

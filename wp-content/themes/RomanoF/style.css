@@ -1,3 +1,11 @@
+/*
+Theme Name: New WP 3.0
+Theme URI: http://мой сайт.ru
+Description: Шаблон темы WordPress 3.0
+Author: Я любимый
+Author URI: http://мой сайт.ru
+Version: 1.0
+*/
 body {
     color: black;
     font: 14px Arial, sans-serif;
@@ -99,14 +107,16 @@ footer {
     float: right;
 }
 .search-form input {
-    width: 250px;
+    width: 300px;
 }
 /**** navigation bar config ****/
+
 
 .main-navigation {
     background: #f3f3f3;
     border: 1px solid #e7e7e7;
     margin-top: 3px;
+    display: block;
 }
 
 .top-menu {
@@ -169,6 +179,7 @@ footer p {
 .twitter {
     float: left;
     width: 300px;
+    display: block;
 }
 
 .twitter p {
@@ -399,13 +410,14 @@ footer p {
     border: none;
 }
 
-.aside-menu li.current-menu-item,
-.aside-menu li.current-menu-item a {
-    color: #29c5e6;
+.aside-menu li.current-menu-item, .aside-menu li.current-menu-item:hover,
+.aside-menu li.current-menu-item a,.aside-menu li:hover, .aside-menu li:hover a {
+    color: white;
+    background: black;
 }
 
 .aside-menu a {
-    color: #8f8f8f;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -419,6 +431,7 @@ footer p {
 }
 
 .map {
+    
     background: #f3f3f3;
     border: 1px solid #e7e7e7;
     padding: 10px;
@@ -482,4 +495,49 @@ footer p {
     display: block;
     font-size: 14px;
     color: #29c5e6;
+}
+.get_my_product {
+    background-size: cover;
+    text-align: center;
+
+    height: 240px;
+    width:32%;
+    border: 1px solid black;
+    margin: 0px 0px 6px 6px;
+    float: left;
+    position: relative;
+}
+.my_product_display {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: none;
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+}
+.get_my_product:hover .my_product_display {
+    display: block;
+}
+.my_product_title {
+
+    margin:0px;
+    text-align: center;
+    padding: 15% 0px;
+    font-family: "RockwellRegular";
+    font-weight: 400 !important;
+
+    font-size: 22px;
+    line-height: 30px;
+}
+.my_product_redirect {
+    position: absolute;
+    bottom: 15px;
+    left: 33%;
+    color: white;
+    text-decoration: none;
+    border: white solid 1px;
+    padding: 10px 15px;
 }
